@@ -9,15 +9,15 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
 @WebServlet("/cabecalhos")
-public class AppServelet2 extends HttpServlet {
+public class AppServlet2 extends HttpServlet {
 	
 	@Override
 	protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
 		
-		resp.getWriter().print("O Host é: " + req.getHeader("Host"));
-		resp.getWriter().print("<p>O seu navegador é: " + req.getHeader("user-agent")+"</p>");
-		resp.getWriter().print("<p>O tipo de codigo que aceita é: " + req.getHeader("aceppt-encoding") +"</p>");
-		resp.getWriter().print("<p>A liguagem que aceita é: " + req.getHeader("accept-language")+"</p>");
+		resp.getWriter().print("O Host Ã©: " + req.getHeader("Host"));
+		resp.getWriter().print("<p>O seu navegador Ã©: " + req.getHeader("user-agent")+"</p>");
+		resp.getWriter().print("<p>O tipo de codigo que aceita Ã©: " + req.getHeader("aceppt-encoding") +"</p>");
+		resp.getWriter().print("<p>A liguagem que aceita Ã©: " + req.getHeader("accept-language")+"</p>");
 		
 		
 	}
